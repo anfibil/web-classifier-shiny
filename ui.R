@@ -6,3 +6,6 @@ shinyUI(fluidPage(
      source("external/classifyTab.R",local=T)$value
   )
 ))  
+
+# There is an insisting blank row that keeps showing up below the navigation bar
+# Waiting for help here: http://goo.gl/QN0cug
