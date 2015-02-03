@@ -1,0 +1,5 @@
+require(shinysky)
+library(RColorBrewer)
+library(GISTools)
+library(shinythemes)
+options(shiny.maxRequestSize=30*1024^2)
