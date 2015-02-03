@@ -14,7 +14,7 @@ output$table <- renderDataTable({
 
   data <- d()[,c(input$featuresToUse)]
   data
-},options=list(searching = FALSE,pageLength = 10, "dom" = "rt"))
+},options=list(searching = FALSE,pageLength = 10))
 
 
 #####################
