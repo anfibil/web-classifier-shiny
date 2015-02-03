@@ -14,7 +14,7 @@ output$table <- renderDataTable({
 
   data <- d()[,c(input$featuresToUse)]
   data
-},options=list(searching = FALSE,pageLength = 10))
+},options=list(searching = FALSE,pageLength = 10, "dom" = "rt"))
 
 
 #####################
@@ -61,8 +61,8 @@ output$scaPlot <- renderPlot({
     legend("topleft", legend=c(levels(d()[,input$class])), fill=cols, bty = "n") # puts text in the legend 
 })
 
-
 output$summary <- renderPrint({
+  if(is.null(inFile()) || is.null(input$feature1))  return(NULL)
   dataset <- d()[,input$feature1]
   summary(dataset)
 })

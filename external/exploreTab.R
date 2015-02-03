@@ -14,9 +14,9 @@ tabPanel('Explore Data',
     			plotOutput('histPlot'),
     			br(),
     			h5(strong("Summary")),
-    			tags$script(type="text/css", ".span8 .well { background-color: #FFFFFF; }"),
-      			verbatimTextOutput("summary")
+    			verbatimTextOutput("summary")
     		)
     	)
     )
 )	
+
