@@ -2,6 +2,10 @@ shinyServer(function(input, output) {
 
   source("external/reactives.R", local=T)
   
+  ###################
+  #### INPUT TAB ####
+  ###################
+  
   output$featuresToUse <- renderUI({
     selectInput('featuresToUse',"Select the features you wish to use",featureNames(),multiple=TRUE,selected=featureNames())
   })
