@@ -66,3 +66,11 @@ output$summary <- renderPrint({
   dataset <- d()[,input$feature1]
   summary(dataset)
 })
+
+################################
+####  CLASSIFY NEW DATA TAB ####
+################################
+
+output$clfchoice <- renderPrint({
+  input$classifyButton
+})

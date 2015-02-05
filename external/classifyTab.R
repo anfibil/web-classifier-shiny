@@ -1,4 +1,4 @@
-navbarMenu("Classify",
+navbarMenu("Classify", icon = icon("lightbulb-o"),
     tabPanel("Classify new data",
       source("./external/classifyTab1.R",local=T)$value
     ),

@@ -1,4 +1,4 @@
-tabPanel('Input and Pre-process',  
+tabPanel('Input and Pre-process', icon = icon("cloud-upload"),
   sidebarLayout(
     sidebarPanel(width=3, align='center',
       wellPanel(align='left',

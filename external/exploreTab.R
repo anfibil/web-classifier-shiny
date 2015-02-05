@@ -1,4 +1,4 @@
-tabPanel('Explore Data',
+tabPanel('Explore Data', icon = icon("bar-chart"),
 	sidebarLayout(
   		sidebarPanel(width=3,
 			uiOutput('selectFeature1'),

@@ -12,10 +12,11 @@ sidebarLayout(
 			))
         ),
         wellPanel(align='left',
-	        selectizeInput('op1', 'Select the classifier you wish to use', choices = names(clfs), multiple = F)
+	        selectizeInput('op1', 'Select the classifier you wish to use', choices = names(clfs), multiple = F),
+          actionButton('classifyButton', 'Evaluate Model')
       	)
 	),
 	mainPanel(
-		dataTableOutput(outputId="table2")
+		verbatimTextOutput("clfchoice")
     )
 )
